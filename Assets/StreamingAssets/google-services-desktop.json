@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "78117868259",
+    "project_id": "frbspp105",
+    "storage_bucket": "frbspp105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78117868259:android:13c2a7345e7894969b6bd6",
+        "android_client_info": {
+          "package_name": "com.vadbird.pp105"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ6_07ZbV4sSp4koUa_ckuzOegEb7VyOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
