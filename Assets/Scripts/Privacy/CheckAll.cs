@@ -17,7 +17,13 @@ public class CheckAll : MonoBehaviour
 
     private void Awake()
     {
-        Device.RequestStoreReview();
+        if (!PlayerPrefs.HasKey("Showed"))
+        {
+#if UNITY_IOS
+            Device.RequestStoreReview();
+#endif
+            PlayerPrefs.SetInt("Showed", 1);
+        }
         StartLoading();
     }
     private void StartLoading()
