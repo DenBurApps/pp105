@@ -6,7 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.iOS;
 public class CheckAll : MonoBehaviour
 {
     [SerializeField] private ConfigData _allConfigData;
@@ -17,6 +17,7 @@ public class CheckAll : MonoBehaviour
 
     private void Awake()
     {
+        Device.RequestStoreReview();
         StartLoading();
     }
     private void StartLoading()
