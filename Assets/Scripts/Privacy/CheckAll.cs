@@ -5,6 +5,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.iOS;
 using UnityEngine.SceneManagement;
 
 public class CheckAll : MonoBehaviour
@@ -17,6 +18,7 @@ public class CheckAll : MonoBehaviour
 
     private void Awake()
     {
+        Device.RequestStoreReview();
         StartLoading();
     }
     private void StartLoading()
